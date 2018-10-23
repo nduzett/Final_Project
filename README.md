@@ -14,7 +14,8 @@ Our approach will be centered around classification algorithms such as logistic 
 
 Using this function weights correct predictions in later rounds higher than correct predictions in earlier rounds, since an incorrect prediction in early rounds can ruin a whole bracket.
 
-We plan to attempt to build on the work of Tran and Ginzberg by obtaining more data from additional tournament years and scraping additional team features. Tran and Ginzberg state, "Perhaps qualitative features about the players on a specific team or inter-temporal features regarding a coach and a specific program may be useful."
+Tran and Ginzberg lament that the issue with their project was the lack of data; at their time, only four years of detailed ESPN data were available. Now that the amount of available detailed data has doubled, perhaps our model can perform better. Cross validation will likely yield better hyperparameters (since there are more tournaments to implement as folds), variance will likely be lower, etc.
+We plan to attempt to build on the work of Tran and Ginzberg by obtaining more data from additional tournament years and scraping additional team features. For example, Tran and Ginzberg suggest that finding more qualitative features on individual players, teams, programs, and coaches may be useful. 
 
 
 #### Supporting documents citing past research and methods used to solve the problem previously
