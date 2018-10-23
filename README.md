@@ -10,7 +10,7 @@ Following the example of Alex Tran and Adam Ginzberg, we will scrape ESPN for th
 #### Outline for how we will solve the problem: preprocessing steps, models, etc.
 Our approach will be centered around classification algorithms such as logistic regression. We will need to identify a cost or score function. As an example, Tran and Ginzberg use a score function:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Score&space;=&space;10&space;*&space;2^{round&space;-&space;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Score&space;=&space;10&space;*&space;2^{round&space;-&space;1}" title="Score = 10 * 2^{round - 1}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=Score&space;=&space;\sum&space;y_{i}(10&space;*&space;2^{round_{i}&space;-&space;1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Score&space;=&space;\sum&space;y_{i}(10&space;*&space;2^{round_{i}&space;-&space;1})" title="Score = \sum y_{i}(10 * 2^{round_{i} - 1})" /></a>
 
 Using this function weights correct predictions in later rounds higher than correct predictions in earlier rounds, since an incorrect prediction in early rounds can ruin a whole bracket.
 
