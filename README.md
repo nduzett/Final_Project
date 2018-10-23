@@ -1,4 +1,4 @@
-# Final_Project
+# Final Project
 ### Cameron Bale, Neil Duzett, Ryan Gardner
 
 #### What is our problem?
