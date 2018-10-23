@@ -7,7 +7,7 @@ Every year during March Madness, millions of brackets are filled out and submitt
 #### What data will we use?
 Following the example of Alex Tran and Adam Ginzberg, we will scrape ESPN for the tournament game data for the last few years of March Madness and for specific features related to each team in the tournament.
 
-#### Outline for how we will solve the problem: preprocessing steps, models, etc.
+#### How will we solve the problem?
 Our approach will be centered around classification algorithms such as logistic regression. We will need to identify a cost or score function. As an example, Tran and Ginzberg use a score function:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Score&space;=&space;\sum&space;y_{i}(10&space;*&space;2^{round_{i}&space;-&space;1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Score&space;=&space;\sum&space;y_{i}(10&space;*&space;2^{round_{i}&space;-&space;1})" title="Score = \sum y_{i}(10 * 2^{round_{i} - 1})" /></a>
@@ -20,9 +20,7 @@ We will create an initial model as a baseline, which we will attempt to improve 
 
 We plan to attempt to build on the work of Tran and Ginzberg by obtaining more data from additional tournament years and scraping additional team features. Tran and Ginzberg state, "Perhaps qualitative features about the players on a specific team or inter-temporal features regarding a coach and a specific program may be useful." Additionally, we will attempt to implement additional models besides logistic regression and an SVM, which were the primary models used by Tran and Ginzberg.
 
-#### Supporting documents citing past research and methods used to solve the problem previously
-
-#### Think deep about the project: is it a meaningful and achievable project for this class?
+#### Supporting documents
 
 <sup>1</sup> https://bleacherreport.com/articles/2697846-march-madness-2017-70-million-brackets-104-billion-in-bets-expected
 
