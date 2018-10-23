@@ -12,10 +12,13 @@ Our approach will be centered around classification algorithms such as logistic 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Score&space;=&space;\sum&space;y_{i}(10&space;*&space;2^{round_{i}&space;-&space;1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Score&space;=&space;\sum&space;y_{i}(10&space;*&space;2^{round_{i}&space;-&space;1})" title="Score = \sum y_{i}(10 * 2^{round_{i} - 1})" /></a>
 
+where <a href="https://www.codecogs.com/eqnedit.php?latex=y_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{i}" title="y_{i}" /></a> is a binary variable equal to 1 if the predicted outcome is correct, and <a href="https://www.codecogs.com/eqnedit.php?latex=round_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?round_{i}" title="round_{i}" /></a> is the tournament round in which the outcome took place.
+
 Using this function weights correct predictions in later rounds higher than correct predictions in earlier rounds, since an incorrect prediction in early rounds can ruin a whole bracket.
 
-We plan to attempt to build on the work of Tran and Ginzberg by obtaining more data from additional tournament years and scraping additional team features. Tran and Ginzberg state, "Perhaps qualitative features about the players on a specific team or inter-temporal features regarding a coach and a specific program may be useful."
+We will create an initial model as a baseline, which we will attempt to improve on. We will clean, understand, and provide summary statistics and descriptions of our data. We will perform feature engineering and selection followed by the utilization of a wide variety of classification models (which we will learn about during future lectures). Once we have implemented a wide variety of models, we will take the three or so models that performed the best and perform cross-validation and hyperparameter tuning to hone in on our best model(s). If possible, we will perform boosting or stack our models to attempt to create the best bracket possible.
 
+We plan to attempt to build on the work of Tran and Ginzberg by obtaining more data from additional tournament years and scraping additional team features. Tran and Ginzberg state, "Perhaps qualitative features about the players on a specific team or inter-temporal features regarding a coach and a specific program may be useful." Additionally, we will attempt to implement additional models besides logistic regression and an SVM, which were the primary models used by Tran and Ginzberg.
 
 #### Supporting documents citing past research and methods used to solve the problem previously
 
